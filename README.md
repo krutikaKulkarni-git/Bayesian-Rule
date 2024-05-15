@@ -42,7 +42,7 @@ plt.show()
 ```
 <img src='datasets/img2.jpg'>
 
-<h3>3. Applying Bayes' rule</h3>
+<h3>3. Applying Bayesian rule</h3>
 
 <p>We want to calculate the <b>probability of dying at age A given that you're left-handed</b>.<br>Here's Bayes' theorem for the two events we care about: left-handedness <code>LH</code> and dying at age <code>A</code>.</p>
 <p align='center'>
@@ -122,7 +122,7 @@ def P_lh(death_distribution_data, study_year = 1990): # sum over P_lh for each a
 ... 0.07766387615350638
 ```
 
-<h3>6. Putting it all together: dying while left-handed (i)</h3>
+<h3>6. Putting it all together: dying while left-handed and right-handed</h3>
 <p>Now we have the means of calculating all three quantities we need: <code>P(A)</code>, <code>P(LH)</code> and <code>P(LH | A)</code><br>We can combine all three using Bayes' rule to get <code>P(A | LH)</code><br>.</p>
 
 <p>For left-handers, </p>
