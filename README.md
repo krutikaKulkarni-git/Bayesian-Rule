@@ -1,10 +1,6 @@
 
-![Forks](https://img.shields.io/github/forks/shukkkur/Do-Left-Handed-People-Die-Young.svg)
-![Stars](https://img.shields.io/github/stars/shukkkur/Do-Left-Handed-People-Die-Young.svg)
-![Watchers](https://img.shields.io/github/watchers/shukkkur/Do-Left-Handed-People-Die-Young.svg)
-![Last Commit](https://img.shields.io/github/last-commit/shukkkur/Do-Left-Handed-People-Die-Young.svg) 
 
-<h2 align='center'>Do Left-handed People Really Die Young?</h2>
+<h2 align='center'>Checking If left-handed people Die Earlier than Right-handed people</h2>
 
 
 <p>A 1991 study reported that left-handed people die on average nine years earlier than right-handed people.<br>Let's explore this phenomenon using age distribution data to see if we can reproduce a difference in average age at death purely from the changing rates of left-handedness over time, refuting the claim of early death for left-handers. </p>
