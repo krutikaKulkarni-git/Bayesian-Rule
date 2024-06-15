@@ -25,7 +25,7 @@ ax.plot(lefthanded_data.Age, lefthanded_data.Male, label='Male', marker = 'x') #
 plt.show()
 ```
 
-<img src='datasets/img1.jpg'>
+<img src='Dataset/img1.jpg'>
 
 <h3>2. Rates of left-handedness over time</h3>
 
@@ -40,13 +40,13 @@ ax.plot(lefthanded_data.Birth_year, lefthanded_data.Mean_lh) # plot 'Mean_lh' vs
 
 plt.show()
 ```
-<img src='datasets/img2.jpg'>
+<img src='Dataset/img2.jpg'>
 
 <h3>3. Applying Bayesian rule</h3>
 
 <p>We want to calculate the <b>probability of dying at age A given that you're left-handed</b>.<br>Here's Bayes' theorem for the two events we care about: left-handedness <code>LH</code> and dying at age <code>A</code>.</p>
 <p align='center'>
-  <img src='datasets/formula1.jpg'>
+  <img src='Dataset/formula1.jpg'>
 </p>
 
 <ul>
@@ -96,12 +96,12 @@ ax.plot(death_distribution_data['Age'], death_distribution_data['Both Sexes']) #
 plt.show()
 ```
 
-<img src='datasets/img33.jpg'>
+<img src='Dataset/img33.jpg'>
 
 <h3>5. The overall probability of left-handedness <code>P(LH)</code></h3>
 <p><code>P(LH)</code> is the probability that a person who died in our particular study year is left-handed. We can calculate it by summing up all of the left-handedness probabilities for each age, weighted with the number of deceased people at each age, then divided by the total number of deceased people to get a probability.</p>
 <p align='center'>
-  <img src='datasets/formula.jpg'>
+  <img src='Dataset/formula.jpg'>
 </p>
 
 <ul>
@@ -161,14 +161,14 @@ ax.plot(ages, right_handed_probability, label = "Right-handed")
 
 plt.show()
 ```
-<img src='datasets/img4.jpg'>
+<img src='Dataset/img4.jpg'>
 
 <p>Notice that the left-handed distribution has a bump below age 70: of the pool of deceased people, left-handed people are more likely to be younger. </p>
 
 <h3>9. Moment of truth: age of left and right-handers at death</h3>
 <p>Finally, let's compare our results with the original study that found that left-handed people were nine years younger at death on average. We can do this by calculating the mean of these probability distributions in the same way we calculated <code>P(LH)</code> earlier, weighting the probability distribution by age and summing over the result.</p>
 
-<img src='datasets/formula4.jpg'>
+<img src='Dataset/formula4.jpg'>
 
 ```python
 average_lh_age =  np.nansum(ages*np.array(left_handed_probability))
